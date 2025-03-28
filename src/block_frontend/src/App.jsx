@@ -7,7 +7,7 @@ function App() {
   function handleSubmit(event) {
     event.preventDefault();
     const name = event.target.elements.name.value;
-    block_backend.greet(name).then((greeting) => {
+    block_backend.getKnowledgeTopics().then((greeting) => {
       setGreeting(greeting);
     });
     return false;
